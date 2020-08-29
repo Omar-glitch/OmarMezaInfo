@@ -1,0 +1,485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+#header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5000;
+    transition: all .2s;
+}
+.header-titulo{
+    margin-left: 30px;
+}
+.header-titulo h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+}
+.header-titulo .header-list{
+    margin-right: 30px;
+}
+.span{
+    display: none;
+}
+.header-list .header-list-container{
+    display: flex;
+}
+.header-list .header-list-container li{
+    list-style: none;
+}
+.header-list .header-list-container li a{
+    margin: 0 20px;
+    color: white;
+    padding: 5px;
+    background: greenyellow;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
+/*Header*/
+/*Main*/
+.main{
+    width: 100%;
+    height: fit-content;
+}
+/*Main*/
+/*section1*/
+.nombre{
+    width: 100%;
+    height: 1000px;
+    background: url(imgOmar/omar1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s;
+    margin-bottom: 100px;
+}
+.nombre .deg-nombre{
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.nombre .tit-nombre{
+    position: relative;
+    width: 80%;
+}
+.nombre .tit-nombre h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.nombre .tit-nombre hr{
+    width: 60%;
+    margin: auto;
+    border: none;
+    height: 4px;
+    background: white;
+}
+.nombre .tit-nombre p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.nombre .ondulado{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+/*section1*/
+/*section2*/
+.informacion{
+    width: 100%;
+    height: 900px;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */ 
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+.informacion .tit-informacion{
+    width: 80%;
+    margin-bottom: 30px;
+}
+.informacion .tit-informacion h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+}
+.informacion .tit-informacion hr{
+    width: 60%;
+    margin: auto;
+    border: none;
+    height: 4px;
+    background: white;
+}
+.informacion .img-informacion{
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.informacion .img-informacion img{
+    width: 230px;
+    height: 350px;
+    border: 2px solid green;
+    box-shadow: 0 0 2px 3px green;
+}
+.informacion .text-informacion{
+    width: 70%;
+}
+.informacion .text-informacion p{
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
+.informacion .ondulado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.informacion .ondulados{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+/*section2*/
+/*section3*/
+.mision{
+    width: 100%;
+    height: 600px;
+    background: url(imgOmar/omar4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.mision .deg-mision{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 600px;
+}
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 10;
+}
+.mision .tit-mision{
+    width: 70%;
+    margin-bottom: 20px;
+    border: white 5px dashed;
+    position: relative;
+    margin-bottom: 100px;
+}
+.mision .tit-mision h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+.mision .text-mision{
+    width: 70%;
+    position: relative;
+}
+.mision .text-mision p{
+    color: white;
+    font-size: 18px;
+}
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+/*section3*/
+/*section4*/
+.vision{
+    width: 100%;
+    height: 600px;
+    background: url(imgOmar/omar2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.vision .deg-vision{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 600px;
+}
+.vision .tit-vision{
+    width: 70%;
+    margin-bottom: 40px;
+    position: relative;
+    border: #fff dashed 5px;
+}
+.vision .tit-vision h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+.vision .text-vision{
+    position: relative;
+    width: 70%;
+}
+.vision .text-vision p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+}
+/*section4*/
+/*section5*/
+.imagenes{
+    width: 100%;
+    height: 1100px;
+    background: url(imgOmar/omar7.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    transition: all .2s;
+}
+.imagenes .deg-imagenes{
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+}
+.imagenes .tit-imagenes{
+    width: 80%;
+    border: 5px dashed white;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.imagenes .tit-imagenes h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+.imagenes .list-imagenes{
+    position: relative;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes .list-imagenes img{
+    width: calc(33%);
+    height: 700px;
+    margin: 0 5px;
+    border: 3px solid green;
+}
+/*section5*/
+/*footer*/
+#footer{
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: 3px solid black;
+}
+.webs-footer{
+    margin-left: 30px;
+}
+.webs-footer p{
+    color: white;
+    font-size: 20px;
+}
+.webs-footer .list-webs-footer{
+    margin-left: 10px;
+}
+.webs-footer .list-webs-footer li a{
+    color: white;
+    font-size: 18px;
+}
+.copy{
+    margin-right: 35px;
+}
+.copy p{
+    color: white;
+    font-size: 20px;
+}
+
+/*footer*/
+@media only screen and (max-width: 922px){
+    .header-list{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: -900px;
+        left: 0;
+        background: #11998e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-bottom: 4px solid black;
+    }
+    .span{
+        display: block;
+    }
+    .fa-bars{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 31px;
+        cursor: pointer;
+        padding: 5px;
+        background: none;
+        transition: all .2s;
+        border-radius: 20px;
+    }
+    .fa-bars:hover{
+       background: white;
+       color: blueviolet;
+    }
+    .header-list .header-list-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .header-list .header-list-container li{
+        margin: 15px;
+        width: 60%;
+        text-align: center;
+        background: none;
+        border-radius: 50px;
+    }
+    .header-list .header-list-container li:hover{
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .header-list .header-list-container li a{
+        background: none;
+        font-size: 24px;
+        color: white;
+    }
+    .imagenes{
+        height: 800px;
+    }
+    .imagenes .deg-imagenes{
+        height: 800px;
+    }
+    .imagenes .list-imagenes img{
+        height: 480px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .header-list .header-list-container li a{
+        background: none;
+        font-size: 14px;
+        color: white;
+    }
+    .imagenes{
+        height: 2800px;
+    }
+    .imagenes .deg-imagenes{
+        height: 2800px;
+    }
+    .imagenes .tit-imagenes{
+        margin-top: 10px;
+        position: absolute;
+        top: 50px;
+    }
+    .imagenes .list-imagenes{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .imagenes .list-imagenes img{
+        width: 100%;
+        height: 700px;
+        margin: 20px 0;
+    }
+    .webs-footer p{
+        font-size: 15px;
+    }
+    .webs-footer .list-webs-footer li a{
+        font-size: 14px;
+    }
+    .copy {
+        margin-right: 10px;
+    }
+    .copy p{
+        font-size: 14px;
+    }
+}
